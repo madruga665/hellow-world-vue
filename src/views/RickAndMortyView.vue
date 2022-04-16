@@ -70,7 +70,7 @@ export default defineComponent({
     border-radius: 10px;
     width: 200px;
     height: 250px;
-    margin: 10px;
+    margin: 10px 35px;
     position: relative;
     transition: 500ms;
     cursor: pointer;

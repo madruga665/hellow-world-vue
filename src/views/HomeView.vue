@@ -4,6 +4,9 @@
       <router-link to="/rickandmorty">
         <LinkCard title="Rick and Morty" content="Pagina feita com a api do Rick and Morty" />
       </router-link>
+      <router-link to="/forms">
+        <LinkCard title="Formulário" content="Formulario simples" />
+      </router-link>
     </section>
   </ViewTemplate>
   <router-view></router-view>
@@ -29,6 +32,7 @@ export default defineComponent({
   align-items: center;
   justify-content: center;
   width: 100%;
+  gap: 50px;
 }
 a {
   text-decoration: none;

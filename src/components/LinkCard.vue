@@ -31,7 +31,7 @@ export default defineComponent({
   border-radius: 1rem;
   position: relative;
   width: 300px;
-  height: 400px;
+  height: 200px;
   transition: 500ms;
   cursor: pointer;
 }
