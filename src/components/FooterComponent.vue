@@ -1,7 +1,7 @@
 <template>
-  <header>
+  <footer>
     <p>Criado com muito 💚 e carinho por @madruga665</p>
-  </header>
+  </footer>
 </template>
 
 <script lang="ts">
@@ -13,16 +13,15 @@ export default defineComponent({
 </script>
 
 <style scoped>
-header {
+footer {
   width: 100%;
   height: 4rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #16a085;
   color: #fff;
   padding: 0 2rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
 }
 img {
   margin-right: 1rem;
