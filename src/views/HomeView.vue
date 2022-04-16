@@ -1,9 +1,12 @@
 <template>
   <ViewTemplate>
     <section class="home-container">
-      <LinkCard title="Rick and Morty" content="Pagina feita com a api do Rick and Morty" />
+      <router-link to="/rickandmorty">
+        <LinkCard title="Rick and Morty" content="Pagina feita com a api do Rick and Morty" />
+      </router-link>
     </section>
   </ViewTemplate>
+  <router-view></router-view>
 </template>
 
 <script lang="ts">
@@ -26,6 +29,8 @@ export default defineComponent({
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+}
+a {
+  text-decoration: none;
 }
 </style>

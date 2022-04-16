@@ -1,17 +1,21 @@
-import {createRouter, createMemoryHistory} from 'vue-router'
-import HomeView from './views/HomeView.vue'
+import { createRouter, createWebHistory } from "vue-router";
+import HomeView from "./views/HomeView.vue";
+import RickAndMortyView from "./views/RickAndMortyView.vue";
 
 const routes = [
   {
-    path: '/',
+    path: "/",
     component: HomeView,
-}
-]
-
+  },
+  {
+    path: "/rickandmorty",
+    component: RickAndMortyView,
+  },
+];
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(),
   routes,
-})
+});
 
 export default router;
