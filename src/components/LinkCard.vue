@@ -13,7 +13,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "CardComponent",
+  name: "LinkCard",
   props: {
     title: String,
     content: String,
@@ -33,6 +33,7 @@ export default defineComponent({
   width: 300px;
   height: 400px;
   transition: 500ms;
+  cursor: pointer;
 }
 .card:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -57,5 +58,8 @@ export default defineComponent({
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  line-height: 1.5rem;
+  color: #16a085;
 }
 </style>

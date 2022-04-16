@@ -1,34 +1,31 @@
 <template>
-  <main class="container">
-    <HeaderComponent />
-    <Card title="Teste" content="Aqui vai o conteúdo do card"/>
-    <FooterComponent />
-  </main>
+  <ViewTemplate>
+    <section class="container">
+      <LinkCard title="Rick and Morty" content="Pagina feita com a api do Rick and Morty" />
+    </section>
+  </ViewTemplate>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HeaderComponent from "../components/HeaderComponent.vue";
-import Card from "../components/Card.vue";
-import FooterComponent from "../components/FooterComponent.vue";
+import ViewTemplate from "../templates/ViewTemplate.vue";
+import LinkCard from "../components/LinkCard.vue";
 
 export default defineComponent({
   name: "HomeView",
   components: {
-    HeaderComponent,
-    Card,
-    FooterComponent,
+    ViewTemplate,
+    LinkCard,
   },
 });
 </script>
 
 <style scoped>
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-  }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
 </style>
