@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <HeaderComponent />
-    <Card />
+    <Card title="Teste" content="Aqui vai o conteúdo do card"/>
     <FooterComponent />
   </main>
 </template>
