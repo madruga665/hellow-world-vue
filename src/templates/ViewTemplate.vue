@@ -29,7 +29,4 @@ export default defineComponent({
     width: 100%;
     height: 100%;
   }
-  slot {
-    border: 2px solid red;
-  }
 </style>

@@ -1,6 +1,8 @@
 <template>
   <header>
-    <img src="../assets/logo.png" alt="Logo Vuejs" width="30" height="30" />
+    <router-link to="/">
+      <img src="../assets/logo.png" alt="Logo Vuejs" width="30" height="30" />
+    </router-link>
     <h3>Olá, Vue js</h3>
   </header>
 </template>
