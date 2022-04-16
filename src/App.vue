@@ -1,19 +1,12 @@
 <template>
-  <Header />
-  <CardContainer />
+  <RouterView />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Header from "./components/Header.vue";
-import CardContainer from "./components/CardContainer.vue";
 
 export default defineComponent({
   name: "App",
-  components: {
-    Header,
-    CardContainer,
-  },
 });
 </script>
 
