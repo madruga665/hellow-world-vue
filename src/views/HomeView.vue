@@ -1,6 +1,6 @@
 <template>
   <ViewTemplate>
-    <section class="container">
+    <section class="home-container">
       <LinkCard title="Rick and Morty" content="Pagina feita com a api do Rick and Morty" />
     </section>
   </ViewTemplate>
@@ -21,7 +21,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.container {
+.home-container {
   display: flex;
   align-items: center;
   justify-content: center;
