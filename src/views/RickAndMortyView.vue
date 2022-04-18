@@ -1,7 +1,7 @@
 <template>
   <ViewTemplate>
+    <span v-if="rickAndMortyCharacters.length <= 0">Carregando...</span>
     <section class="cards-container">
-      <span v-if="rickAndMortyCharacters.length <= 0">Carregando...</span>
       <div class="character-card" v-for="character in rickAndMortyCharacters" :key="character.id">
         <img :src="character.image" />
         <footer>
@@ -17,9 +17,9 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import axios from "axios";
 import ViewTemplate from "../templates/ViewTemplate.vue";
-import { IRickAndMortyCharacter } from "@/types";
+import { IRickAndMortyCharacter } from "../types";
+import { getAllCharacters } from "../services/RickAndMortyService";
 
 export default defineComponent({
   name: "RickAndMortyView",
@@ -34,8 +34,7 @@ export default defineComponent({
   methods: {
     async fetchData(): Promise<void> {
       try {
-        const response = await axios.get("https://rickandmortyapi.com/api/character/");
-        const characters = response.data.results;
+        const characters = await getAllCharacters();
         this.rickAndMortyCharacters = characters;
       } catch (error) {
         console.log(error);
