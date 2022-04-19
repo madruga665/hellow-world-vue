@@ -2,9 +2,9 @@
   <div :class="$style['character-card']" >
     <img :class="$style['character-image']" :src="image" />
     <footer>
-      <h3>
+      <h4>
         {{ name }}
-      </h3>
+      </h4>
     </footer>
   </div>
 </template>
