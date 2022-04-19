@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header :class="$style.header" >
     <router-link to="/">
       <img :class="$style['vue-logo']" src="../assets/logo.png" alt="Logo Vuejs" width="30" height="30" />
     </router-link>
@@ -16,7 +16,7 @@ export default defineComponent({
 </script>
 
 <style module>
-header {
+.header {
   width: 100%;
   height: 4rem;
   display: flex;
