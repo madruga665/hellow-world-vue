@@ -50,7 +50,6 @@ export default defineComponent({
   width: 100%;
   height: calc(100% - 3rem);
   border-radius: 5px 5px 0 0;
-  margin: 0;
 }
 .character-card footer {
   position: absolute;

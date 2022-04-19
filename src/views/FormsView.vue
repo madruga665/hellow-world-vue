@@ -1,19 +1,19 @@
 <template>
   <ViewTemplate>
-    <form>
-      <div class="form-control">
+    <form :class="$style['form-container']">
+      <div :class="$style['form-control']">
         <label for="name">Nome</label>
         <input id="name" type="text" v-model="name" />
       </div>
-      <div class="form-control">
+      <div :class="$style['form-control']">
         <label for="email">Email</label>
         <input id="email" type="email" v-model="email" />
       </div>
-      <div class="form-control">
+      <div :class="$style['form-control']">
         <label for="password">Senha</label>
         <input id="password" type="password" v-model="password" />
       </div>
-      <button type="submit" @click="submit">Enviar</button>
+      <button :class="$style['subimit-button']" type="submit" @click="submit">Enviar</button>
     </form>
   </ViewTemplate>
 </template>
@@ -48,8 +48,8 @@ export default defineComponent({
 });
 </script>
 
-<style>
-form {
+<style module>
+.form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,13 +71,13 @@ form {
   color: #16a085;
   margin-right: 240px;
 }
-input {
+.form-control input {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 5px;
   width: 300px;
 }
-button {
+.subimit-button {
   border: 1px solid #16a085;
   background: #16a085;
   color: #fff;
