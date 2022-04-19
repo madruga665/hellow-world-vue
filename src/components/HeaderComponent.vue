@@ -15,7 +15,7 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style module>
 header {
   width: 100%;
   height: 4rem;
