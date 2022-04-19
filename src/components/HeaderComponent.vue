@@ -1,7 +1,7 @@
 <template>
   <header>
     <router-link to="/">
-      <img src="../assets/logo.png" alt="Logo Vuejs" width="30" height="30" />
+      <img :class="$style['vue-logo']" src="../assets/logo.png" alt="Logo Vuejs" width="30" height="30" />
     </router-link>
     <h3>Olá, Vue js</h3>
   </header>
@@ -26,7 +26,7 @@ header {
   padding: 0 2rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
-img {
+.vue-logo {
   margin-right: 1rem;
 }
 </style>
