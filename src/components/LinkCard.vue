@@ -1,9 +1,9 @@
 <template>
-  <div class="card">
-    <div class="content-container">
+  <div :class="$style.card">
+    <div :class="$style['content-container']">
       <p>{{ content }}</p>
     </div>
-    <footer class="title-container">
+    <footer :class="$style['title-container']">
       <h2>{{ title }}</h2>
     </footer>
   </div>
@@ -21,7 +21,7 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style module>
 .card {
   display: flex;
   flex-direction: column;
