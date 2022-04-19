@@ -12,7 +12,7 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style module>
 footer {
   width: 100%;
   height: 4rem;
