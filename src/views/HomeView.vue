@@ -7,6 +7,9 @@
       <router-link to="/forms">
         <LinkCard title="Formulário" content="Formulario simples" />
       </router-link>
+      <router-link to="/counter">
+        <LinkCard title="Contador" content="Super Contador" />
+      </router-link>
     </section>
   </ViewTemplate>
   <router-view></router-view>
