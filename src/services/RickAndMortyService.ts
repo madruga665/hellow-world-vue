@@ -13,3 +13,8 @@ export const getAllCharacters = async (): Promise<Array<IRickAndMortyCharacter>>
   const data = response.data.results;
   return data;
 };
+
+RickAndMortyService.interceptors.response.use(
+  (response) => response,
+  (error) => error
+)

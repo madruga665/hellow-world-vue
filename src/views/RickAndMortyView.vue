@@ -33,12 +33,8 @@ export default defineComponent({
   },
   methods: {
     async fetchData(): Promise<void> {
-      try {
         const characters = await getAllCharacters();
         this.rickAndMortyCharacters = characters;
-      } catch (error) {
-        console.log(error);
-      }
     },
   },
   mounted() {
